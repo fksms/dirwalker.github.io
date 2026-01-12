@@ -1,18 +1,9 @@
-<script setup>
-
-// 親から渡されたコンポーネントの参照を受け取る
-const props = defineProps({
-    iconPath: String
-})
-
-</script>
-
 <template>
     <!-- xsの時に表示 -->
     <v-container fluid class="flex-row align-center d-flex d-sm-none">
         <a href="https://fksms.github.io/DirWalker">
             <v-row class="align-center ml-3" href="">
-                <img :src="iconPath" style="height: 40px;" alt="DirWalker"></img>
+                <img src="/DirWalker.png" style="height: 40px" alt="DirWalker" />
                 <h3 class="mx-3 mt-1">DirWalker</h3>
             </v-row>
         </a>
@@ -20,7 +11,7 @@ const props = defineProps({
         <v-spacer></v-spacer>
 
         <a href="https://github.com/fksms/DirWalker">
-            <img src="../assets/Logo_GitHub.svg" style="height: 35px;" class="mr-3"></img>
+            <img src="/Logo_GitHub.svg" style="height: 35px" class="mr-3" />
         </a>
     </v-container>
 
@@ -28,7 +19,7 @@ const props = defineProps({
     <v-container fluid class="flex-row align-center d-none d-sm-flex">
         <a href="https://fksms.github.io/DirWalker">
             <v-row class="align-center ml-15" href="">
-                <img :src="iconPath" style="height: 40px;" alt="DirWalker"></img>
+                <img src="/DirWalker.png" style="height: 40px" alt="DirWalker" />
                 <h3 class="mx-3 mt-1">DirWalker</h3>
             </v-row>
         </a>
@@ -36,7 +27,7 @@ const props = defineProps({
         <v-spacer></v-spacer>
 
         <a href="https://github.com/fksms/DirWalker">
-            <img src="../assets/Logo_GitHub.svg" style="height: 35px;" class="mr-15" alt="Github"></img>
+            <img src="/Logo_GitHub.svg" style="height: 35px" class="mr-15" alt="Github" />
         </a>
     </v-container>
 </template>

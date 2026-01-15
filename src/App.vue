@@ -2,23 +2,20 @@
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import MainView from './components/MainView.vue';
-
-// DirWalkerアイコンの場所
-const iconPath = import.meta.env.BASE_URL + 'DirWalker.png';
 </script>
 
 <template>
     <v-app>
         <v-app-bar color="grey-lighten-3" height="70">
-            <Header :icon-path="iconPath"></Header>
+            <Header></Header>
         </v-app-bar>
 
         <v-main>
-            <MainView :icon-path="iconPath"></MainView>
+            <MainView></MainView>
         </v-main>
 
         <v-footer color="grey-lighten-3" height="200">
-            <Footer :icon-path="iconPath"></Footer>
+            <Footer></Footer>
         </v-footer>
     </v-app>
 </template>
